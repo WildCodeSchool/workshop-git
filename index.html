@@ -38,6 +38,7 @@
     <section class="hero is-large">
         <!-- Begin Hero Content-->
         <div class="hero-body">
+            <img class="wcs-logo" src="images/logo-WCS.png" alt="WCS logo"/>
             <div class="container has-text-centered">
                 <h1 class="subtitle">Atelier</h1>
                 <h2 class="title">Git Github</h2>
@@ -141,12 +142,12 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="fas fa-hands-helping"></i> Aide Tac à cloner le dépôt et comprendre ensemble comment faire après lui avoir donné le lien vers le dépot.
+                        <i class="fas fa-hands-helping"></i> Aide Tac à cloner le dépôt et comprendre ensemble comment faire après lui avoir donné le lien vers le dépôt.
                     </p>
                 </div>
                 <div class="column is-6 tac-card" data-aos="fade-left">
-                    <i class="far fa-clone"></i> Clone le dépot de Tic nouvellement créé en renommant le repertoire cible en local “wild-tac”. <br>Attention, bien utiliser :
-                    <br> <code class="language-shell">git clone url_du_dépo nouveau_nom_de_dossier</code>)
+                    <i class="far fa-clone"></i> Clone le dépôt de Tic nouvellement créé en renommant le repertoire cible en local “wild-tac”. <br>Attention, bien utiliser :
+                    <br> <code class="language-shell">git clone url_du_dépôt nouveau_nom_de_dossier</code>
                 </div>
             </div>
         </div>
@@ -204,7 +205,7 @@
                     </p>
                 </div>
                 <div class="column is-6 tac-card" data-aos="fade-left">
-                    <i class="far fa-file"></i> Créer le fichier <code>not_same_file.html</code> dans le repertoire de projet.
+                    <i class="far fa-file"></i> Créer le fichier <code>not_same_file.html</code> dans le repertoire de projet.<br>
                     <i class="far fa-file-code"></i> Y mettre un commentaire, là peu importe, identique ou différent.
                 </div>
             </div>
@@ -222,10 +223,10 @@
                     </p>
                 </div>
                 <div class="column is-6 tac-card" data-aos="fade-left">
-                    <i class="far fa-file"></i>  Créer le fichier <code>secret_file.html</code><br>
-                    Contenant : <code class="inline-block"> // Mustn't be shared on github because, here is my password I use for gmail, facebook, my laptop, and if i could, I would use the same as pin for my cell phone.<br></code>
+                    <i class="far fa-file"></i> Créer le fichier <code>secret_file.html</code><br>
+                    Contenant : <code class="inline-block"> // Mustn't be shared on github because, here is my password I use for gmail, facebook, my laptop, and if I could, I would use the same as pin for my cell phone.<br></code>
                     <i class="fas fa-terminal"></i> Exécuter : <code class="language-shell">git status</code><br>
-                    <i class="far fa-file"></i>Ignorer le fichier <code>secret_file.html</code> en créant le fichier .gitignore et en le renseignant comme il faut.
+                    <i class="far fa-file"></i> Ignorer le fichier <code>secret_file.html</code> en créant le fichier <code>.gitignore</code> et en le complétant comme il faut.
 
                 </div>
             </div>
@@ -239,11 +240,11 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="fas fa-terminal"></i>Exécuter : <code class="language-shell">git status</code>
+                        <i class="fas fa-terminal"></i> Exécuter : <code class="language-shell">git status</code>
                     </p>
                 </div>
                 <div class="column is-6 tac-card" data-aos="fade-left">
-                    <i class="fas fa-terminal"></i>Exécuter : <code class="language-shell">git status</code>, le fichier <code>.gitignore</code> doit apparaitre.
+                    <i class="fas fa-terminal"></i> Exécuter : <code class="language-shell">git status</code>, le fichier <code>.gitignore</code> doit apparaître.
                 </div>
             </div>
         </div>
@@ -258,7 +259,7 @@
                     <p class="is-larger has-text-centered">
                         <i class="fas fa-terminal"></i> <code class="language-shell">git add .</code><br>
                         <i class="fas fa-terminal"></i> <code class="language-shell">git status</code> <br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git commit -m “ “ </code>(mettre un message explicite de ce que vous avez fait, pas de limites, vous pouvez appuyer sur entrée tant que vous n’avez pas fermé les guillemets)
+                        <i class="fas fa-terminal"></i> <code class="language-shell">git commit -m " "</code>(mettre un message explicite de ce que vous avez fait, pas de limites, vous pouvez appuyer sur entrée tant que vous n’avez pas fermé les guillemets)
                     </p>
                 </div>
 
@@ -290,7 +291,7 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="far fa-thumbs-up"></i>  Tic n’a pas eu de problème
+                        <i class="far fa-thumbs-up"></i> Tic n’a pas eu de problème
                     </p>
                 </div>
                 <div class="column is-6 tac-card" data-aos="fade-left">
@@ -307,7 +308,7 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="fab fa-github"></i> Tac étant proprietaire du dépot, il doit donner les droits à Tac.<br>
+                        <i class="fab fa-github"></i> Tac étant proprietaire du dépôt, il doit donner les droits à Tac.<br>
                         “Settings” > “Collaborators and team” et ajoute Tic en tant que collaborateur.
                     </p>
                 </div>
@@ -435,11 +436,11 @@
                 </div>
                 <div class="column is-6 tac-card" data-aos="fade-left">
                     Créer une branche à partir de la branche actuelle.<br>
-                    <i class="fas fa-terminal"></i>  <code class="language-shell">git branch tac_branch</code><br>
-                    <i class="fas fa-terminal"></i>  <code class="language-shell">git checkout tac_branch</code><br>
+                    <i class="fas fa-terminal"></i> <code class="language-shell">git branch tac_branch</code><br>
+                    <i class="fas fa-terminal"></i> <code class="language-shell">git checkout tac_branch</code><br>
                     ou directement<br>
-                    <i class="fas fa-terminal"></i>  <code class="language-shell">git checkout -b tac_branch</code><br>
-                    <i class="fas fa-terminal"></i>  Tac met en ligne le commit sur la nouvelle branche (utiliser <code class="language-shell">git push orgin nom_branche</code>)<br>
+                    <i class="fas fa-terminal"></i> <code class="language-shell">git checkout -b tac_branch</code><br>
+                    <i class="fas fa-terminal"></i> Tac met en ligne le commit sur la nouvelle branche (utiliser <code class="language-shell">git push origin nom_branche</code>)<br>
                     <i class="fab fa-github"></i> Créer une pull request depuis github de ta branche tac_branch vers master<br>
                     (attention à l’ordre d’affichage)<br>
                     <i class="fab fa-github"></i> Vérifier que “can’t automatically merge” s’affiche<br>
