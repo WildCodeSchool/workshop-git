@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
+
+:root {
+    --tictacColor:#F76C6C;
+    --ticColor:#F99797;
+    --tacColor:#FFD64F;
+    --mainColor:#43485c;
+}
+
 .has-vertically-aligned-content {
     display: flex;
     flex-direction: column;
@@ -16,16 +24,22 @@ html {
 }
 
 .header-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+}
+
+.wcs-logo {
+    position:absolute;
+    top:20px;
+    width: 100px;
 }
 
 .hero {
-
     background: url("../images/squirrels2.jpg") no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: 100vh;
     color: white;
-    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -45,7 +59,7 @@ html {
     padding-top: 50px;
     font-size: 1.7rem;
     text-transform: uppercase;
-    text-shadow: 1px 1px #3B424E;
+    text-shadow: 1px 1px var(--mainColor);
 }
 
 .hero .hero-foot {
@@ -80,28 +94,28 @@ html {
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
-    border-bottom: 2px solid #1f2c6c;
+    border-bottom: 2px solid var(--mainColor);
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
-    color: #1f2c6c;
+    color: var(--mainColor);
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
-    color: #1f2c6c;
+    color: var(--mainColor);
     transition: all .2s ease-in-out;
-    border-bottom: 2px solid #1f2c6c;
+    border-bottom: 2px solid var(--mainColor);
 }
 
 .main-content {
-    padding-top: 2rem;
-    color: #3c4172;
+    padding-top: 0;
+    color: var(--mainColor);
     font-family: 'Poppins', sans-serif;
 }
 
 .main-content .section-dark {
-    background-color: #3B424E;
-    padding: 60px 0px;
+    background-color: var(--mainColor);
+    padding: 80px 0;
     color: ghostwhite;
 }
 
@@ -112,9 +126,9 @@ html {
 }
 
 .main-content .section-dark.resume button {
-    border: 2px solid #43485c;
+    border: 2px solid var(--mainColor);
     background: white;
-    color: #43485c;
+    color: var(--mainColor);
     height: 50px;
     width: 250px;
     font-size: 1rem;
@@ -122,7 +136,7 @@ html {
 }
 
 .main-content .section-dark.resume .fa-download {
-    color: #1f2c6c;
+    color: var(--mainColor);
 }
 
 .main-content .section-dark.my-work {
@@ -137,7 +151,6 @@ html {
 
 .main-content .section-dark.my-work .work-item {
     margin-bottom: 1rem;
-    -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
     border-radius: 5px;
     background-size: cover;
@@ -146,9 +159,7 @@ html {
 }
 
 .main-content .section-dark.my-work .work-item:hover {
-    -webkit-transform: scale(1.055) translateY(-2px);
     transform: scale(1.055) translateY(-2px);
-    -webkit-box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
     box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
 }
 
@@ -203,7 +214,7 @@ html {
 
 .main-content .section-light.contact button {
     width: 100%;
-    background-color: #43485c;
+    background-color: var(--mainColor);
     color: white;
     height: 50px;
     font-size: 1.1rem;
@@ -219,7 +230,7 @@ html {
 
 .main-content .section-color.services {
     padding: 100px;
-    background-color: #43485c;
+    background-color: var(--mainColor);
     color: white;
 }
 
@@ -234,7 +245,7 @@ html {
 }
 
 .main-content .section-title {
-    color: #43485c;
+    color: var(--mainColor);
     text-transform: uppercase;
     font-size: 1.8rem;
     letter-spacing: 2px;
@@ -247,22 +258,22 @@ html {
     padding: 0;
     line-height: 25px;
     text-align: center;
-    background: #3B424E;
+    background: var(--mainColor);
     color: ghostwhite;
 }
 
 .footer a {
-    padding: 0rem 1rem 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
     color : ghostwhite;
 }
 
 .footer a i {
     font-size: 1.5rem;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 .fa-download {
-    color: #43485c;
+    color: var(--mainColor);
 }
 
 #toTop {
@@ -272,10 +283,10 @@ html {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
+    z-index: 1;
     border: none;
     outline: none;
-    background-color: #F76C6C;
+    background-color: var(--tictacColor);
     color: white;
     cursor: pointer;
     border-radius: 50%;
@@ -298,8 +309,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #43485c;
+    background-color: var(--mainColor);
 }
 
 body.preloader-site {
@@ -309,7 +319,7 @@ body.preloader-site {
 .preloader-wrapper {
     height: 100%;
     width: 100%;
-    background: #1f2c6c;
+    background: var(--mainColor);
     position: fixed;
     top: 0;
     left: 0;
@@ -320,7 +330,6 @@ body.preloader-site {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 120px;
 }
@@ -331,20 +340,19 @@ body.preloader-site {
 }
 
 .tic-card {
-    background: #F99797;
+    background: var(--ticColor);
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .tac-card {
-    background: #FFD64F;
+    background: var(--tacColor);;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .tictac-card {
-    background: #F76C6C;
-    border-radius: 6px;
+    background: var(--tictacColor);
     border-radius: 6px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
@@ -361,3 +369,4 @@ code {
 iframe {
     height: 400px;
 }
+
