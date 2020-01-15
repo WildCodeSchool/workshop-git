@@ -1,2 +1,2 @@
-# atelier-git
-Workshop to be done in binomial for the discovery of git and github.
+# workshop-git
+Workshop to be done in pairs to discover git and github.
