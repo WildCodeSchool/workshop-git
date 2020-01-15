@@ -1,2 +1,2 @@
 # atelier-git
-Atelier à faire en binôme pour la découverte de git et github.
+Workshop to be done in binomial for the discovery of git and github.
