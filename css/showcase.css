@@ -369,3 +369,10 @@ code {
 iframe {
     height: 400px;
 }
+
+/* This is just to have custom breaks after paragraphs.
+   ~ David */
+
+.trailing-custom-margin {
+    margin-bottom: 0.8rem;
+}
