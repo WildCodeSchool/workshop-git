@@ -35,7 +35,7 @@ html {
 
 .hero {
     background: url("../images/squirrels2.jpg") no-repeat;
-    background-atdalehment: fixed;
+    background-attachment: center;
     background-size: cover;
     height: 100vh;
     color: white;
@@ -44,6 +44,7 @@ html {
 }
 
 .hero .title {
+    padding-top: 2rem;
     font-family: 'Kaushan Script', sans-serif;
     transform: rotate(-5deg);
     font-size: 5rem;
@@ -368,4 +369,8 @@ code {
 }
 iframe {
     height: 400px;
+}
+
+.trailing-custom-margin {
+    margin-bottom: 0.8rem;
 }
