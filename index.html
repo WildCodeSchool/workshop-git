@@ -365,11 +365,32 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="far fa-file-code"></i> Create a <code>same_file.html</code> file and type a comment, i.e.:  <br><code class="language-html"> &lt;!-- type your comment here --></code>.
+                        <i class="far fa-file-code"></i> Chip does a <code class="language-shell">git pull</code> to get last changes made by Dale. <br>
+                        Then he creates a new branch from the current branch. <br>
+                        <i class="fas fa-terminal"></i> <code class="language-shell">git branch chip_branch</code><br>
+                    <i class="fas fa-terminal"></i> <code class="language-shell">git checkout chip_branch</code><br>
+                    or directly<br>
+                    <i class="fas fa-terminal"></i> <code class="language-shell">git checkout -b chip_branch</code><br>
+                </div>
+                <div class="column is-6 dale-card" data-aos="fade-left">
+                    <i class="far fa-file-code"></i> Follow the same instructions as Chip, and create a new branch <code class="language-shell">dale_branch</code>.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-light">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div
+                        class="column is-6 chip-card"
+                        data-aos="fade-right"
+                >
+                    <p class="is-larger">
+                        <i class="far fa-file-code"></i> Create a <code>same_file.html</code> file and type a comment, i.e.: <br><code class="language-html"> &lt;!-- type your comment here --></code>.
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
-                    <i class="far fa-file-code"></i> Create a <code>same_file.html</code> file and also type a comment in it, but not the same as Chip!
+                    <i class="far fa-file-code"></i> Create a <code>same_file.html</code> file and also type a comment in it, but ! not the same as Chip !
                 </div>
             </div>
         </div>
@@ -400,21 +421,37 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="fas fa-terminal"></i> Chip first starts pushing the commit (use <code class="language-shell">git push</code>)
-                    </p>
-                    <p class="is-larger">
-                        <i class="far fa-lightbulb"></i> Chip has the error message that Dale had earlier, but since Chip is clever, he now knows what he has to do before he can push online again (<code class="language-shell">git pull</code>)
+                        <i class="fas fa-terminal"></i> Chip publish his branch on GitHub (using <code class="language-shell">git push origin chip_branch</code>)
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
                     <p class="is-larger">
-                        <i class="far fa-lightbulb"></i> Once Chip has committed, pushed, and solved the error in the message, it's Dale's turn to do a <code class="language-shell">git push</code>
+                        <i class="fas fa-terminal"></i> Dale does the same thing as Chip (using <code class="language-shell">git push origin dale_branch</code>)
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-light">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div
+                        class="column is-6 chip-card"
+                        data-aos="fade-right"
+                >
+                <p class="is-larger">
+                    <i class="fab fa-github"></i> Create a pull request on GitHub from your branch chip_branch to main (Be careful with the order).<br>
+                </p>
+                <p class="is-larger">
+                    <i class="fab fa-github"></i> Check if “able to merge” is displayed.<br>
+                </p>
+                <p class="is-larger">
+                    <i class="fab fa-github"></i> Add a description : “Explain what you modified and how to test it”.
+                </p>
+                </div>
+                <div class="column is-6 dale-card" data-aos="fade-left">
                     <p class="is-larger">
-                        <i class="fas fa-exclamation-circle"></i> <strong>Warning</strong>, at this point, <strong>don't</strong> do a <code class="language-shell">git pull</code>
-                    </p>
-                    <p class="is-larger">
-                        <i class="fas fa-exclamation-circle"></i> <strong>Warning</strong>, Dale has an error message again, but this time Dale will need to solve it differently! (see below)
+                        <i class="far fa-eye"></i> Watch what Chip is doing, and do the same with your branch (dale_branch to main).<br>
                     </p>
                 </div>
             </div>
@@ -428,29 +465,15 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="far fa-eye"></i> Look at what Dale is doing to figure it out together
+                        <i class="far fa-eye"></i> Look at what Dale is doing and help him if needed.
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
-                    <p class="is-larger trailing-custom-margin" >
-                        Create a new branch based on the current branch:<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git branch Dale_branch</code><br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git checkout Dale_branch</code><br>
-                        Or directly:<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git checkout -b Dale_branch</code><br>
-                    </p>
-                    <p class="is-larger trailing-custom-margin">
-                        Dale should push the changes in the new branch to the remote:<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git push origin Dale_branch</code><br>
-                    </p>
-                    <p class="is-larger">
-                        <i class="fab fa-github"></i> Create a "pull request" from GitHub from your Dale_branch branch to main (pay attention to the display order)<br>
-                    </p>
-                    <p class="is-larger">
-                        <i class="fab fa-github"></i> Check that "can't automatically merge" is displayed.<br>
-                    </p>
-                    <p class="is-larger">
-                        <i class="fab fa-github"></i> Add description: "Explain what you modified and how to test it".
+                    <p class="is-larger" >
+                        <i class="fab fa-github"></i> Go on GitHub and go to your pull request.<br>
+                        Check if everything looks good and then click on the “Merge pull request” button. 
+                        <br><br>
+                        🥳 Good Job ! You just successfully merge your first branch ! Now, you can see your work on the main branch.
                     </p>
                 </div>
             </div>
@@ -464,29 +487,12 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="fab fa-github"></i> Access the "pull request" on the GitHub link<br>
-                        In “This branch has conflicts that must be resolved”, click on “command line”
+                        <i class="fab fa-github"></i> Follow the same steps as Dale to validate your pull request and be able to merge your branch.<br><br>
+                        <i class="fas fa-exclamation-circle"></i> Damn ! There is a conflict ! You can see the message : “This branch has conflicts that must be resolved”.
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
-                    <i class="far fa-eye"></i> Look at what Chip does, understand with him...
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section-light">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div
-                        class="column is-6 chip-card"
-                        data-aos="fade-right"
-                >
-                    <p class="is-larger">
-                        <i class="fab fa-github"></i> Follow the instructions (after clicking the "Git" button) of STEP 1. Do not do STEP 2 at this time.
-                    </p>
-                </div>
-                <div class="column is-6 dale-card" data-aos="fade-left">
-                    <i class="far fa-comment"></i> Explain both commands to Chip
+                    <i class="far fa-eye"></i> Look at what Chip does.
                 </div>
             </div>
         </div>
@@ -499,55 +505,8 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger has-text-centered">
-                        Try to understand the output of the last STEP 1 command in the terminal
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="section-light">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div
-                        class="column is-6 chip-card"
-                        data-aos="fade-right"
-                >
-                    <p class="is-larger">
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git status</code>
-                    </p>
-                </div>
-                <div class="column is-6 dale-card" data-aos="fade-left">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section-light">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div
-                        class="column is-12 chipdale-card"
-                        data-aos="fade-right"
-                >
-                    <p class="is-larger has-text-centered">
-                        <i class="far fa-lightbulb"></i> Together, discuss the result of <code class="language-shell">git status</code>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="section-light">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div
-                        class="column is-12 chipdale-card"
-                        data-aos="fade-right"
-                >
-                    <p class="is-larger has-text-centered">
-                        <i class="fab fa-youtube"></i> Watch this video <br>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JtIX3HJKwfo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <i class="fab fa-youtube"></i> To understand how to resolve conflicts, watch this video together :<br><br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JtIX3HJKwfo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                     </p>
                 </div>
             </div>
@@ -561,11 +520,15 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="fas fa-terminal"></i> Resolve conflicts, as shown in the video, <strong>but</strong> from your local text editor.
+                        <i class="fas fa-terminal"></i> Instead of resolving the conflicts on GitHub like it is shown in the video, do it locally in your code editor.<br>
+                        <br>
+                        On GitHub click on "command line instructions" as shown in the next image and follow the instructions. Don't forget to do some <code class="language-shell">git status</code> between every step and discuss about it with Dale.
+                        <br><br>
+                        <img src="images/printConflicts.png" alt="Capture Git conflits">
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
-                    <i class="far fa-eye"></i> Watch what Chip does and help him (your teammate won't always be there to resolve conflicts, but if they are, enjoy it!).
+                    <i class="far fa-eye"></i> Look at what Chip is doing and help him if needed (A second developper won't always be here to resolve the conflicts with you, but if he does, take the benefit of it !)
                 </div>
             </div>
         </div>
@@ -577,18 +540,12 @@
                         class="column is-6 chip-card"
                         data-aos="fade-right"
                 >
-                    <p class="is-larger trailing-custom-margin">
-                        Stage and commit your changes:<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git status</code><br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git add .</code> (stages all files that were changed)<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git commit</code><br>
-                    </p>
-                    <p class="is-larger trailing-custom-margin">
-                        Now follow STEP 2 as described on GitHub. Once you're done, the branches are merged.<br>
+                    <p class="is-larger">
+                        <i class="fab fa-github"></i> Now that there is no more conflicts, go back to the pull request on GitHub, check if everything is good and click on the “Merge pull request” button.
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
-                    <i class="fas fa-hands-helping"></i> Keep helping Chip and come to a mutual understanding of what you are doing and what is going on.
+                    <i class="fas fa-hands-helping"></i> Watch what Chip does and help him if needed.
                 </div>
             </div>
         </div>
