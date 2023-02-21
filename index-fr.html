@@ -356,6 +356,29 @@
             </div>
         </div>
     </div>
+    <!-- TO BE MODIFIED -->
+    <div class="section-light">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div
+                        class="column is-6 chip-card"
+                        data-aos="fade-right"
+                >
+                <p class="is-larger trailing-custom-margin" >
+                    Tic fait un <code class="language-shell">git pull</code> pour récupérer les derniers changements effectués par Tac.<br>
+                    Ensuite, il créer une branche à partir de la branche actuelle.<br>
+                    <i class="fas fa-terminal"></i> <code class="language-shell">git branch tic_branch</code><br>
+                    <i class="fas fa-terminal"></i> <code class="language-shell">git switch tic_branch</code><br>
+                    ou directement<br>
+                    <i class="fas fa-terminal"></i> <code class="language-shell">git switch -c tic_branch</code><br>
+                </p>
+                </div>
+                <div class="column is-6 dale-card" data-aos="fade-left">
+                    <i class="far fa-eye"></i> En suivant les consignes de Tic, créé toi aussi une branche <code class="language-shell">tac_branch</code>.
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="section-light">
         <div class="container">
             <div class="columns is-multiline">
@@ -399,21 +422,37 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="fas fa-terminal"></i> Tic commence en premier à mettre en ligne le commit (utiliser <code class="language-shell">git push</code>)
-                    </p>
-                    <p class="is-larger">
-                        <i class="far fa-lightbulb"></i> Tic a l’erreur que Tac a eu tout à l’heure, mais comme tic est malin, il sait maintenant ce qu’il doit faire avant de refaire une mise en ligne (<code class="language-shell">git push</code>)
+                        <i class="fas fa-terminal"></i> Tic publie sa branche sur GitHub (en utilisant <code class="language-shell">git push origin tic_branch</code>)
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
                     <p class="is-larger">
-                        <i class="far fa-lightbulb"></i> Une fois que Tic a commité, poussé, et résolu l'erreur du message, c'est au tour de Tac de faire un <code class="language-shell">git push</code>
+                        <i class="fas fa-terminal"></i> Tac publie également sa branche (en utilisant <code class="language-shell">git push origin tac_branch</code>)
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-light">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div
+                        class="column is-6 chip-card"
+                        data-aos="fade-right"
+                >
+                <p class="is-larger">
+                    <i class="fab fa-github"></i> Créer une pull request depuis GitHub de ta branche tic_branch vers main (attention à l’ordre d’affichage)<br>
+                </p>
+                <p class="is-larger">
+                    <i class="fab fa-github"></i> Vérifier que “able to merge” s’affiche<br>
+                </p>
+                <p class="is-larger">
+                    <i class="fab fa-github"></i> Ajoute à la description : “Explain what you modified and how to test it”.
+                </p>
+                </div>
+                <div class="column is-6 dale-card" data-aos="fade-left">
                     <p class="is-larger">
-                        <i class="fas fa-exclamation-circle"></i> <strong>Attention</strong>, ne fais pas de <code class="language-shell">git pull</code> pour l'instant.
-                    </p>
-                    <p class="is-larger">
-                        <i class="fas fa-exclamation-circle"></i> <strong>Attention</strong>, Tac a également de nouveau une erreur, cette fois-ci, Tac va la résoudre autrement ! (voir plus bas)
+                        <i class="far fa-eye"></i> Regarde ce que fait Tic, et fais la même chose avec ta branche (tac_branch vers main)<br>
                     </p>
                 </div>
             </div>
@@ -427,29 +466,15 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="far fa-eye"></i> Regarder ce que fait Tac pour comprendre avec lui
+                        <i class="far fa-eye"></i> Observes ce que fait Tac et aide le si besoin.
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
-                    <p class="is-larger trailing-custom-margin" >
-                        Créer une branche à partir de la branche actuelle.<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git branch tac_branch</code><br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git checkout tac_branch</code><br>
-                        ou directement<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git checkout -b tac_branch</code><br>
-                    </p>
-                    <p class="is-larger trailing-custom-margin">
-                        Tac met en ligne le commit sur la nouvelle branche:<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git push origin tac_branch</code><br>
-                    </p>
                     <p class="is-larger">
-                        <i class="fab fa-github"></i> Créer une pull request depuis GitHub de ta branche tac_branch vers main (attention à l’ordre d’affichage)<br>
-                    </p>
-                    <p class="is-larger">
-                        <i class="fab fa-github"></i> Vérifier que “can’t automatically merge” s’affiche<br>
-                    </p>
-                    <p class="is-larger">
-                        <i class="fab fa-github"></i> Ajouter la description: “Explain what you modified and how to test it”.
+                        <i class="fab fa-github"></i> Va sur GitHub et rends toi sur ta pull request<br>
+                        Vérifie que tout est bon, et clique sur le bouton “Merge pull request”.<br>
+                        <br>
+                        🥳 Bravo ! Tu viens de merger ta première branche. Ton travail apparaît désormais sur main. 
                     </p>
                 </div>
             </div>
@@ -463,29 +488,13 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="fab fa-github"></i> Accéder à la pull request sur le lien GitHub<br>
-                        Dans “This branch has conflicts that must be resolved”, cliquer sur “command line”
+                        <i class="fab fa-github"></i> Suis les mêmes étapes que Tac précedemment pour valider ta pull request et pouvoir merger ta branche.<br>
+                        <br>
+                        <i class="fas fa-exclamation-circle"></i> Oh zut, il y a un conflit. En effet, le message "This branch has conflicts that must be resolved" s'affiche.    
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
-                    <i class="far fa-eye"></i> Regarder ce que fait Tic, comprendre avec lui
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section-light">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div
-                        class="column is-6 chip-card"
-                        data-aos="fade-right"
-                >
-                    <p class="is-larger">
-                        <i class="fab fa-github"></i> Suivre les instructions (après avoir cliqué sur le bouton “Git”) du STEP 1. Ne pas faire STEP 2 pour le moment.
-                    </p>
-                </div>
-                <div class="column is-6 dale-card" data-aos="fade-left">
-                    <i class="far fa-comment"></i> Expliquer les 2 commandes à Tic
+                    <i class="far fa-eye"></i> Observe ce que fait Tic.
                 </div>
             </div>
         </div>
@@ -498,10 +507,10 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger has-text-centered">
-                        Comprendre la sortie de la dernière commande du STEP 1 dans le terminal
+                        <i class="fab fa-youtube"></i> Pour comprendre comment résoudre les conflits, regardez ensemble cette vidéo :<br><br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JtIX3HJKwfo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                     </p>
                 </div>
-
             </div>
         </div>
     </div>
@@ -513,55 +522,11 @@
                         data-aos="fade-right"
                 >
                     <p class="is-larger">
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git status</code>
-                    </p>
-                </div>
-                <div class="column is-6 dale-card" data-aos="fade-left">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section-light">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div
-                        class="column is-12 chipdale-card"
-                        data-aos="fade-right"
-                >
-                    <p class="is-larger has-text-centered">
-                        <i class="far fa-lightbulb"></i> Comprendre ensemble le résultat de <code class="language-shell">git status</code>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="section-light">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div
-                        class="column is-12 chipdale-card"
-                        data-aos="fade-right"
-                >
-                    <p class="is-larger has-text-centered">
-                        <i class="fab fa-youtube"></i> Regarder cette vidéo <br>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JtIX3HJKwfo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="section-light">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div
-                        class="column is-6 chip-card"
-                        data-aos="fade-right"
-                >
-                    <p class="is-larger">
-                        <i class="fas fa-terminal"></i> Résoudre les conflits,  comme dans la vidéo mais ! depuis l’éditeur de texte en local.
+                        <i class="fas fa-terminal"></i> Plutôt que de résoudre les conflits comme dans la vidéo sur GitHub, fais le directement dans ton éditeur de code en local.<br>
+                        <br>
+                        Sur GitHub clique sur "command line instructions" comme sur l'image et suis les instructions. N'oublie pas de faire des <code class="language-shell">git status</code> entre chaque étape et d'en discuter avec Tac.
+                        <br><br>
+                        <img src="images/printConflicts.png" alt="Capture Git conflits">
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
@@ -577,18 +542,12 @@
                         class="column is-6 chip-card"
                         data-aos="fade-right"
                 >
-                    <p class="is-larger trailing-custom-margin">
-                        Sauvegarder les fichiers<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git status</code><br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git add .</code> (ajoute à l'index tous les fichiers qui ont été modifiés)<br>
-                        <i class="fas fa-terminal"></i> <code class="language-shell">git commit</code><br>
-                    </p>
-                    <p class="is-larger trailing-custom-margin">
-                        Suivre step 2 : les branches sont fusionnées (merge)
+                    <p class="is-larger">
+                        <i class="fab fa-github"></i> Maintenant que tous les conflits sont réglés, retournes sur la pull request sur GitHub, vérifies que tout est ok et cliques sur le bouton "Merge pull request".
                     </p>
                 </div>
                 <div class="column is-6 dale-card" data-aos="fade-left">
-                    <i class="fas fa-hands-helping"></i> Continuer d’aider Tic et de comprendre ensemble ce que vous faites et ce qu’il se passe.
+                    <i class="fas fa-hands-helping"></i> Regarde ce que fait Tic, et aide le si besoin.
                 </div>
             </div>
         </div>
