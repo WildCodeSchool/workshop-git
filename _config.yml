@@ -10,3 +10,6 @@ title: "Git / GitHub"
 main_image: images/squirrels2.jpg
 show_clone: false
 show_toc: false
+
+titles_from_headings:
+  enabled: false
