@@ -1,5 +1,7 @@
 # Special guests: Chip and Dale
 
+[⬅ Version FR](./README-FR)
+
 In a team of 2 developers, follow the instructions, each choosing their role!
 Left column: Chip. Right column: Dale.
 In this workshop, you will learn how to collaborate using Git and GitHub, how to manage file conflicts, and how to version your code.
@@ -31,7 +33,7 @@ Explain to Chip what he is doing in each step.
 
 ## Chip
 
-Help Dale to clone the repository and understand how to do this together after giving him the link to the repository.
+Give the link to the repository to Dale, and understand how to do clone it together on Dale's computer.
 
 ## Dale
 
@@ -85,9 +87,9 @@ Look at what Dale is doing, try to understand what is happening in each step and
 Create the file `secret_file.html` containing:
 
 ```html
-// Must not be shared on GitHub because this is the password I use for gmail,
+<!-- Must not be shared on GitHub because this is the password I use for gmail,
 facebook, my laptop, and if I could, I would use the same as pin for my cell
-phone
+phone -->
 ```
 
 Execute:
@@ -96,7 +98,7 @@ Execute:
 git status
 ```
 
-Ignore the file `secret_file.html` by creating a `.gitignore` file (click <a href="https://git-scm.com/docs/gitignore">here</a> for more information) and adding the necessary instructions to it.
+Ignore the file `secret_file.html` by creating a `.gitignore` file (click [here](https://git-scm.com/docs/gitignore) for more information) and adding the necessary instructions to it.
 
 ## Chip
 
