@@ -98,7 +98,9 @@ Exécute :
 git status
 ```
 
-Ignore le fichier `secret_file.html` en créant un fichier `.gitignore` (clique [ici](https://git-scm.com/docs/gitignore) pour plus d'informations) et en ajoutant les instructions nécessaires.
+<!-- thx https://css-tricks.com/targetblank/ -->
+
+Ignore le fichier `secret_file.html` en créant un fichier `.gitignore` (<a href="https://git-scm.com/docs/gitignore" target="git-documentation">clique ici</a> pour plus d'informations) et en ajoutant les instructions nécessaires.
 
 ## Tic
 
